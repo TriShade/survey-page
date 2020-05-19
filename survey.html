@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TTRPG Survey</title>
+<link href="StyleSheet.css" rel="stylesheet"> 
+</head>
+<body>
+<div id="main">
+<h1 id="title">New Tabletop Group</h1>
+<p id="description">Thank you all for showing interest in joining this new group. Please fill out the survey below so we can create the best experience for everyone.</p>
+<form id="survey-form">
+  <h2 class="section">Personal Information</h2>
+  <label for="name" id="name-label">
+    What is your name?
+  </label><br>
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <br>
+  <label for="email" id="email-label">
+    What is your email?
+  </label><br>
+  <input type="email" id="email" placeholder="Enter your email" required>
+  <br>
+  <label for="number" id="number-label">
+    How old are you?
+  </label><br>
+  <input type="number" id="number" placeholder="Enter your age" min="1" max="150">
+  <h2 class="section">Game Preferences</h2>
+  <label for="dropdown" id="dropdown-label">
+    How experienced are you in tabletop rpgs?
+  </label><br>
+  <select id="dropdown" name="dropdown">
+    <option value="never-before">Never played before</option>
+    <option value="one-campaign">Been in one campaign</option>
+    <option value="multiple-campaigns">Have played in multiple campaigns</option>
+    <option value="gygax">I am Gygax</option>
+  </select>
+<br>
+  <div id=selectors>
+  <p>What is your favourite type of gameplay?</p>
+ <!-- <label for="combat"><input id="combat" type="radio" name="gameplay-type" value="combat" class="gameplay-type"> Combat</label>
+  <br>
+  <label for="social"><input id="social" type="radio" name="gameplay-type" value="social" class="gameplay-type"> Social</label>
+  <br>
+  <label for="exploration"><input id="exploration" type="radio" name="gameplay-type" value="exploration" class="gameplay-type"> Exploration</label> -->
+ <label class="container2" for="combat">Combat
+  <input id="combat" type="radio" name="gameplay-type" value="combat" class="gameplay-type">
+  <span class="radio"></span>
+</label>
+<label class="container2" for="social">Social
+  <input id="social" type="radio" name="gameplay-type" value="social" class="gameplay-type">
+  <span class="radio"></span>
+</label>
+<label class="container2" for="exploration">Exploration
+  <input id="exploration" type="radio" name="gameplay-type" value="exploration" class="gameplay-type">
+  <span class="radio"></span>
+</label>
+
+  <p>What systems are you interested in playing?</p>
+  <label class="container">D&D 3.5e
+    <input type="checkbox" name="system" value="3.5e" class="system">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">D&D 5e
+    <input type="checkbox" name="system" value="5e" class="system">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Pathfinder
+    <input type="checkbox" name="system" value="pathfinder" class="system">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Ryuutama
+    <input type="checkbox" name="system" value="ryuutama" class="system">
+    <span class="checkmark"></span>
+  </label>
+   
+
+</div>
+<br>
+  <textarea id="comments" rows="4" cols="50" placeholder="Any additional comments?">
+</textarea>
+<br>
+<br>
+<button type="submit" id="submit">Submit Form</button>
+</form>
+</div>
+</body>
+</html>
